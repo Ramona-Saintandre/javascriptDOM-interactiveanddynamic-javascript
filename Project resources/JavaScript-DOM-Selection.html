@@ -4,6 +4,7 @@
 <h1>Lorem ipsum dolor sit amet consectetuer adipiscinelit</h1>
 <ul>
   <li id="one">Lorem ipsum dolor sit amet consectetuer.</li>
+  <li id="two">Lorem ipsum dolor sit amet consectetuer.</li>
   <li class="highlight">Aenean commodo ligula eget dolor.</li>
   <li>Aenean massa cum sociis natoque penatibus.</li>
 </ul>
@@ -21,16 +22,24 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 
 
 var el1 = document.getElementById('one');
-el1.style.background ="yellow";
+el1.style.background ="lightblue";
+var el6 = document.getElementById('two');
+el6.style.color ="pink";
+el6.style.textAlign = 'center';
+el6.style.fontSize = '35px';
+el6.style.fontStyle = 'italic';
+el6.style.fontWeight = '900';
+
 var el2 = document.getElementsByTagName('li');
 console.log(el2);
 var el3 = document.getElementsByClassName('highlight');
 console.log(el3);
-var el4 = document.querySelector('.highlight');
+// allows you to select by CSS styles
+var el4 = document.querySelector('.highlight');  
 console.log(el4);
 var el5 = document.querySelectorAll('.highlight');
 console.log(el5);
-el5[1].style.color = 'yellow';
+el5[1].style.color = 'orange';
 
 
 
