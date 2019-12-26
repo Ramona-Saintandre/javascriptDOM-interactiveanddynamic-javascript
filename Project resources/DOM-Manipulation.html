@@ -2,6 +2,7 @@
 <head><title>JavaScript DOM Course</title></head>
 <body>
 <h1>Lorem ipsum dolor sit amet consectetuer adipiscinelit</h1>
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam adipisci voluptatibus beatae natus exercitationem? Quos alias, praesentium, atque natus eaque, dolores quas cumque perspiciatis corporis suscipit possimus fugiat consequuntur consectetur!</h2>
 <ul>
   <li id="one">Lorem ipsum dolor sit amet consectetuer.</li>
   <li class="highlight">Aenean commodo ligula eget dolor.</li>
@@ -18,12 +19,21 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
   <li>Aenean massa cum sociis natoque penatibus.</li>
 </ul>
 <script>
-var el1 = document.querySelector('#one');
+var el1 = document.querySelector('h1');
+// using querySelector is to select an item by either id or element 
 console.dir(el1.innerHTML);
-el1.innerHTML = "Hello World";
-el1.style.color = 'red';
+el1.style.color='red';
 el1.style.background = 'blue';
-el1.innerText = "TEST";
+// created and element trying to access and change it 
+let el2 =document.querySelector('h2');
+el2.style.color='green';
+el2.style.textAlign = 'center';
+
+console.log(el2.innerHTML);
+// not sure why this is not showing in the console ?
+el2.innerHTML = "this is an H2 element";
+// 
+el1.innerHTML = "Hello World";
 
 
 
