@@ -16,26 +16,31 @@
 }
 </style>
 </head>
+<style>
+    .red{
+        background-color: brown;
+        color:rgb(66, 27, 27);
+    }
+    .blue {
+        background-color: aliceblue;
+        color: rgb(67, 67, 90);
+        margin:10px;
+        padding: 10px;
+        border: 1px solid rgb(34, 105, 38);
+
+    }
+
+</style>
 <body>
-<h1 class="test">Lorem ipsum dolor sit amet consectetuer adipiscinelit</h1>
+<h1 class = 'test' >Lorem ipsum dolor sit amet consectetuer adipiscinelit</h1>
+
 
 <script>
-
-var el1 = document.querySelector('h1');
+let el1 = document.querySelector('h1');
 console.dir(el1);
-el1.classList.add('red');
+// el1.className ='red';
+
 el1.classList.toggle('red');
-el1.classList.toggle('red');
-el1.classList.remove('test');
-//el1.className = "red";
-
-
-
-
-
-
-
-
 
 </script>
 </body>
