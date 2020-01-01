@@ -17,25 +17,33 @@
 </style>
 </head>
 <body>
-<a href="https://placeholder.com"><img src="https://via.placeholder.com/250/00ffff/000000"></a><br>
-<img src="https://via.placeholder.com/350x150/00ff00/ffffff">
+<a href="https://placeholder.com"><img src="https://via.placeholder.com/250/11ddef/000000"></a><br>
+<img src="https://via.placeholder.com/350x150/00ff00/bbbdee">
 <script>
+// var el1 = document.getElementsByTagName('a');
+// console.log(el1[0]);
+// var el2 = document.getElementsByTagName('img');
+// console.log(el2[1]);
+// var temp = el1[0].getAttribute('href');
+// el1[0].setAttribute('href','http://www.google.com');
+// var tempImg1 = el2[0].getAttribute('src');
+// var tempImg2 = el2[1].getAttribute('src');
+// el2[0].setAttribute('src',tempImg2);
+// el2[1].setAttribute('src',tempImg1);
+// console.log(tempImg1);
+
 var el1 = document.getElementsByTagName('a');
 console.log(el1[0]);
-var el2 = document.getElementsByTagName('img');
+var el2 = document.getElementsByTagName('a');
 console.log(el2[1]);
-var temp = el1[0].getAttribute('href');
-el1[0].setAttribute('href','http://www.google.com');
-var tempImg1 = el2[0].getAttribute('src');
-var tempImg2 = el2[1].getAttribute('src');
+
+var temp = el1[0].getAttribute('href','http://www.google.com');
+var tempImg = el2[0].getAttribute('src');
+var tempImg = el2[1].getAttribute('src');
 el2[0].setAttribute('src',tempImg2);
 el2[1].setAttribute('src',tempImg1);
-console.log(tempImg1);
 
-
-
-
-
+console.log(tempImg);
 
 
 
